@@ -1,10 +1,11 @@
-
+```html
 <!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work From Home Opportunity</title>
+    <meta name="theme-color" content="#111827">
+    <title>Abhishek Ads & Graphics Design</title>
 
     <!-- Meta Pixel Code -->
     <script>
@@ -16,12 +17,15 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
+
     fbq('init', '1628457688642525');
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1012266775189437&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1012266775189437&ev=PageView&noscript=1"
+        alt="">
+    </noscript>
     <!-- End Meta Pixel Code -->
 
     <style>
@@ -29,156 +33,376 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
+
         body {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            color: #ffffff;
             min-height: 100vh;
+            padding: 25px 15px;
             display: flex;
-            justify-content: center;
             align-items: center;
-            padding: 20px 15px;
+            justify-content: center;
+            color: #fff;
+            background:
+                radial-gradient(circle at top left, #7c3aed 0%, transparent 40%),
+                radial-gradient(circle at bottom right, #0891b2 0%, transparent 40%),
+                linear-gradient(135deg, #0f172a, #111827);
         }
+
         .container {
             width: 100%;
-            max-width: 480px;
-            background: rgba(30, 41, 59, 0.7);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(12px);
-            border-radius: 24px;
-            padding: 30px 20px;
+            max-width: 500px;
+            overflow: hidden;
+            position: relative;
             text-align: center;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            padding: 30px 22px;
+            border-radius: 26px;
+            background: rgba(17, 24, 39, 0.94);
+            border: 1px solid rgba(255,255,255,0.18);
+            box-shadow: 0 25px 70px rgba(0,0,0,0.4);
         }
+
+        .brand {
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #67e8f9;
+            margin-bottom: 22px;
+        }
+
         .badge {
             display: inline-block;
-            background: rgba(34, 197, 94, 0.2);
-            color: #4ade80;
-            border: 1px solid rgba(74, 222, 128, 0.3);
-            font-size: 13px;
-            font-weight: 600;
-            padding: 6px 14px;
-            border-radius: 50px;
+            padding: 8px 14px;
             margin-bottom: 18px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            border-radius: 50px;
+            color: #bbf7d0;
+            background: rgba(34,197,94,0.13);
+            border: 1px solid rgba(74,222,128,0.4);
+            font-size: 12px;
+            font-weight: 700;
         }
+
         h1 {
-            font-size: 26px;
-            font-weight: 800;
-            line-height: 1.3;
-            margin-bottom: 12px;
-            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            font-size: clamp(27px, 6vw, 35px);
+            line-height: 1.25;
+            font-weight: 900;
+            margin-bottom: 14px;
+            background: linear-gradient(90deg, #67e8f9, #a78bfa, #f9a8d4);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
         }
-        p.subtitle {
+
+        .subtitle {
             font-size: 15px;
-            color: #94a3b8;
-            line-height: 1.5;
+            line-height: 1.8;
+            color: #cbd5e1;
             margin-bottom: 24px;
         }
-        .features {
-            background: rgba(15, 23, 42, 0.6);
-            border-radius: 16px;
-            padding: 16px;
-            margin-bottom: 25px;
-            text-align: left;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-        .feature-item {
-            display: flex;
-            align-items: center;
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 12px;
+            margin-bottom: 23px;
+        }
+
+        .service {
+            text-align: left;
+            padding: 16px 12px;
+            border-radius: 16px;
+            background: linear-gradient(
+                145deg,
+                rgba(99,102,241,0.19),
+                rgba(6,182,212,0.09)
+            );
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .service-icon {
+            display: block;
+            font-size: 25px;
+            margin-bottom: 9px;
+        }
+
+        .service h3 {
             font-size: 14px;
+            margin-bottom: 6px;
+            color: #f8fafc;
+        }
+
+        .service p {
+            color: #a5b4fc;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .info {
+            padding: 17px;
+            border-radius: 17px;
+            background: rgba(15,23,42,0.85);
+            border: 1px solid rgba(255,255,255,0.09);
+            margin-bottom: 22px;
+            text-align: left;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 11px;
+            padding: 9px 0;
+            font-size: 14px;
+            line-height: 1.6;
             color: #e2e8f0;
-            padding: 8px 0;
         }
-        .feature-item:not(:last-child) {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+        .info-item:not(:last-child) {
+            border-bottom: 1px solid rgba(255,255,255,0.07);
         }
-        .feature-icon {
-            font-size: 18px;
+
+        .info-icon {
+            font-size: 19px;
         }
-        .btn-telegram {
+
+        .contact-label {
+            color: #94a3b8;
+            font-size: 12px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .phone {
+            display: inline-block;
+            color: #67e8f9;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 22px;
+        }
+
+        .telegram-btn {
+            width: 100%;
+            min-height: 58px;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
-            background: linear-gradient(135deg, #0088cc, #00a8ff);
-            color: #ffffff;
+            padding: 16px 12px;
+            border-radius: 16px;
             text-decoration: none;
-            font-size: 17px;
-            font-weight: 700;
-            padding: 16px 24px;
-            border-radius: 50px;
-            box-shadow: 0 10px 25px rgba(0, 136, 204, 0.4);
-            animation: pulse 2s infinite;
-            transition: transform 0.2s ease;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 800;
+            background: linear-gradient(110deg, #0088cc, #2563eb, #7c3aed);
+            box-shadow: 0 9px 28px rgba(37,99,235,0.3);
+            transition: transform 0.2s, filter 0.2s;
+            animation: glow 2s infinite;
         }
-        .btn-telegram:active {
-            transform: scale(0.97);
+
+        .telegram-btn:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.12);
         }
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 15px rgba(0, 136, 204, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(0, 136, 204, 0);
-            }
+
+        .telegram-btn:active {
+            transform: scale(0.98);
         }
-        .footer-note {
-            margin-top: 18px;
+
+        .timer {
+            margin-top: 15px;
+            color: #cbd5e1;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .timer strong {
+            color: #67e8f9;
+        }
+
+        .footer {
+            margin-top: 22px;
+            padding-top: 17px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #94a3b8;
             font-size: 12px;
-            color: #64748b;
+            line-height: 1.8;
+        }
+
+        .footer strong {
+            color: #e9d5ff;
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(14,165,233,0.3);
+            }
+            50% {
+                box-shadow: 0 0 0 7px rgba(14,165,233,0);
+            }
+        }
+
+        @media (max-width: 360px) {
+            .container {
+                padding: 25px 15px;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .telegram-btn {
+                font-size: 14px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .telegram-btn {
+                animation: none;
+            }
         }
     </style>
 </head>
+
 <body>
+    <main class="container">
 
-    <div class="container">
-        <span class="badge">● Limited Slots Available</span>
+        <div class="brand">✨ Abhishek Presents ✨</div>
 
-        <h1>Ghar Baithe Smart Work Karein</h1>
-        <p class="subtitle">Daily 2-3 ghante apne mobile se kaam karke regular income start karein. No experience required.</p>
+        <span class="badge">🚀 Ads & Creative Services</span>
 
-        <div class="features">
-            <div class="feature-item">
-                <span class="feature-icon">📱</span>
-                <span>Sirf Smartphone Aur Internet Ki Zaroorat</span>
-            </div>
-            <div class="feature-item">
-                <span class="feature-icon">⏰</span>
-                <span>Flexible Timings (Kabhi Bhi Kaam Karein)</span>
-            </div>
-            <div class="feature-item">
-                <span class="feature-icon">💸</span>
-                <span>Daily / Weekly Direct Payout Support</span>
-            </div>
-            <div class="feature-item">
-                <span class="feature-icon">🤝</span>
-                <span>Full Free Training & Complete Guidance</span>
-            </div>
-        </div>
+        <h1>
+            Abhishek Ads<br>
+            & Graphics Design
+        </h1>
 
-        <!-- Button with Lead Tracking & Auto Message -->
-        <a href="https://t.me/Rawatsingh1?text=Yes%20I'm%20interested%20in%20work%20from%20home%20%F0%9F%8F%A0" 
-           onclick="fbq('track', 'Lead');" 
-           class="btn-telegram" 
-           target="_blank">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="22" y1="2" x2="11" y2="13"></line>
-                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-            </svg>
-            Send Message on Telegram
+        <p class="subtitle">
+            Apne Business, Brand Ya Online Work Ko Behtar Banayein!
+            Professional Ad Creatives, Graphics Design Aur Digital
+            Marketing Guidance Ke Liye Connect Karein.
+        </p>
+
+        <section class="services">
+
+            <div class="service">
+                <span class="service-icon">🎯</span>
+                <h3>Ads Management</h3>
+                <p>Campaign setup, ad creatives aur campaign management.</p>
+            </div>
+
+            <div class="service">
+                <span class="service-icon">🎨</span>
+                <h3>Graphics Design</h3>
+                <p>Attractive posters, banners aur social media designs.</p>
+            </div>
+
+            <div class="service">
+                <span class="service-icon">📱</span>
+                <h3>Social Media</h3>
+                <p>Business promotions ke liye creative content.</p>
+            </div>
+
+            <div class="service">
+                <span class="service-icon">🤝</span>
+                <h3>Personal Guidance</h3>
+                <p>Apni requirements discuss karne ke liye contact karein.</p>
+            </div>
+
+        </section>
+
+        <section class="info">
+
+            <div class="info-item">
+                <span class="info-icon">✅</span>
+                <span>Professional Ads & Creative Design Services</span>
+            </div>
+
+            <div class="info-item">
+                <span class="info-icon">💡</span>
+                <span>Apne business aur project ke hisaab se solutions.</span>
+            </div>
+
+            <div class="info-item">
+                <span class="info-icon">💬</span>
+                <span>Details aur pricing ke liye Telegram par message karein.</span>
+            </div>
+
+        </section>
+
+        <p class="contact-label">📞 Contact / WhatsApp</p>
+
+        <a class="phone" href="tel:8810809713">
+            8810809713
         </a>
 
-        <p class="footer-note">Button click karte hi direct chat khul jayegi</p>
-    </div>
+        <a
+            href="https://t.me/Smartwork123452"
+            class="telegram-btn"
+            id="telegramButton"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="trackLead()"
+        >
+            <svg width="23" height="23" viewBox="0 0 24 24"
+                 fill="currentColor" aria-hidden="true">
+                <path d="M22 2 2 9.5l7.2 2.6L12 21l3.7-5.2L22 2zM9.9 11.4l8-5.1-6.3 6.8-.3 3.5-1.4-4.1z"/>
+            </svg>
+            Chat With Abhishek on Telegram
+        </a>
+
+        <p class="timer" id="timerMessage">
+            ⏳ Telegram <strong>3 seconds</strong> mein automatically open hoga.
+            Agar open na ho, upar button par click karein.
+        </p>
+
+        <footer class="footer">
+            <strong>Abhishek Ads & Graphics Design</strong><br>
+            Ads Management • Graphics Design • Digital Services<br>
+            Please discuss service details and pricing before proceeding.
+        </footer>
+
+    </main>
+
+    <script>
+        const telegramURL = "https://t.me/Smartwork123452";
+        let redirectStarted = false;
+        let seconds = 3;
+
+        function trackLead() {
+            if (typeof fbq === "function") {
+                fbq("track", "Lead");
+            }
+        }
+
+        // Automatic Telegram redirect after 3 seconds.
+        const timer = setInterval(function () {
+            seconds--;
+
+            const message = document.getElementById("timerMessage");
+
+            if (seconds > 0) {
+                message.innerHTML =
+                    '⏳ Telegram <strong>' + seconds +
+                    ' second</strong> mein automatically open hoga. ' +
+                    'Agar open na ho, upar button par click karein.';
+            } else {
+                clearInterval(timer);
+                message.textContent =
+                    "Telegram open ho raha hai...";
+
+                if (!redirectStarted) {
+                    redirectStarted = true;
+                    window.location.href = telegramURL;
+                }
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>
+```
